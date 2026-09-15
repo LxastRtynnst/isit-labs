@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram name="Use Cases" id="use-cases">
+    <mxGraphModel dx="1369" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FAD7AC,#FFF2CC);strokeColor=light-dark(#3700CC,#AD89B8);verticalAlign=top;fontSize=14;fontStyle=1;strokeWidth=3;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;Информационная система бронирования спортивных площадок&lt;/span&gt;" vertex="1">
+          <mxGeometry height="720" width="520" x="270" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#6A00FF,#E5CCFF);strokeColor=light-dark(#3700CC,#AD89B8);fontSize=12;fontColor=#ffffff;" value="Просмотр площадок" vertex="1">
+          <mxGeometry height="50" width="180" x="450" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#6A00FF,#E5CCFF);strokeColor=light-dark(#3700CC,#AD89B8);fontSize=12;fontColor=#ffffff;" value="Создание брони" vertex="1">
+          <mxGeometry height="50" width="180" x="450" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#6A00FF,#E5CCFF);strokeColor=light-dark(#3700CC,#AD89B8);fontSize=12;fontColor=#ffffff;" value="Отмена брони" vertex="1">
+          <mxGeometry height="50" width="180" x="450" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#6A00FF,#E5CCFF);strokeColor=light-dark(#3700CC,#AD89B8);fontSize=12;fontColor=#ffffff;" value="Управление площадками" vertex="1">
+          <mxGeometry height="50" width="180" x="450" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#6A00FF,#E5CCFF);strokeColor=light-dark(#3700CC,#AD89B8);fontSize=12;fontColor=#ffffff;" value="Настройка расписания" vertex="1">
+          <mxGeometry height="50" width="180" x="450" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#6A00FF,#E5CCFF);strokeColor=light-dark(#3700CC,#AD89B8);fontSize=12;fontColor=#ffffff;" value="Управление пользователями" vertex="1">
+          <mxGeometry height="50" width="180" x="450" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#6A00FF,#E5CCFF);strokeColor=light-dark(#3700CC,#AD89B8);fontSize=12;fontColor=#ffffff;" value="Формирование отчёта" vertex="1">
+          <mxGeometry height="50" width="180" x="450" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=light-dark(#000000,#000000);" target="uc1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="129.47058823529414" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=light-dark(#000000,#000000);" target="uc2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="132.29411764705878" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=light-dark(#000000,#000000);" target="uc3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="135.11764705882354" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=light-dark(#000000,#000000);" target="uc4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="379.82352941176464" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=light-dark(#000000,#000000);" target="uc5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="382.6470588235295" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=light-dark(#000000,#000000);" target="uc6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="385.47058823529414" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=light-dark(#000000,#000000);" target="uc7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="630.5294117647059" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CVOqMiTsdEuMWopUF0bq-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=light-dark(#6A00FF,#E5CCFF);fontColor=#ffffff;strokeColor=light-dark(#3700CC,#AD89B8);" value="ПОЛЬЗОВАТЕЛЬ" vertex="1">
+          <mxGeometry height="70" width="230" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CVOqMiTsdEuMWopUF0bq-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=light-dark(#6A00FF,#E5CCFF);fontColor=#ffffff;strokeColor=light-dark(#3700CC,#AD89B8);" value="АДМИНИСТРАТОР" vertex="1">
+          <mxGeometry height="70" width="230" x="30" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="CVOqMiTsdEuMWopUF0bq-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=light-dark(#6A00FF,#E5CCFF);fontColor=#ffffff;strokeColor=light-dark(#3700CC,#AD89B8);" value="МЕНЕДЖЕР" vertex="1">
+          <mxGeometry height="70" width="230" x="20" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
