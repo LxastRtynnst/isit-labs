@@ -71,11 +71,11 @@
 project/
 ├── frontend/
 ├── backend/
-│ ├── controllers/
-│ ├── services/
-│ ├── repositories/
-│ ├── models/
-│ └── routes/
+│   ├── controllers/
+│   ├── services/
+│   ├── repositories/
+│   ├── models/
+│   └── routes/
 ├── database/
 ├── docs/
 └── README.md
