@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram name="Architecture" id="architecture">
+    <mxGraphModel dx="1141" dy="665" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontSize=13;fontStyle=1" value="Клиентская часть" vertex="1">
+          <mxGeometry height="100" width="230" x="450" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontSize=12;" value="Веб-интерфейс" vertex="1">
+          <mxGeometry height="50" width="150" x="490" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="server" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontSize=13;fontStyle=1" value="Серверная часть" vertex="1">
+          <mxGeometry height="220" width="470" x="340" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontSize=12;" value="API-сервер" vertex="1">
+          <mxGeometry height="50" width="150" x="360" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Сервис аутентификации" vertex="1">
+          <mxGeometry height="50" width="160" x="625" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Сервис уведомлений" vertex="1">
+          <mxGeometry height="50" width="160" x="600" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d0cee2;strokeColor=#56517e;fontSize=12;" value="Хранилище данных" vertex="1">
+          <mxGeometry height="80" width="140" x="430" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="email" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d0cee2;strokeColor=#56517e;fontSize=12;" value="Email / SMS шлюз" vertex="1">
+          <mxGeometry height="60" width="160" x="610" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="frontend" value="HTTP">
+          <mxGeometry relative="1" x="-0.5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="565" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="frontend" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="api" value="HTTP / REST">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="api" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="db" value="SQL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="api" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="auth" value="Запрос">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="api" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="notify" value="Уведомление">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="notify" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="email" value="SMTP">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xiwIUG61dswYolyOXdP6-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="ПОЛЬЗОВАТЕЛЬ" vertex="1">
+          <mxGeometry height="80" width="120" x="505" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
