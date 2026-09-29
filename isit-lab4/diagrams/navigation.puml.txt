@@ -1,0 +1,35 @@
+@startuml navigation
+title Схема навигации между экранами
+
+skinparam state {
+    BackgroundColor #EAF4FC
+    BorderColor #3498DB
+}
+
+[*] --> Login : открытие приложения
+
+state "Авторизация" as Login
+state "Главная страница\n(Дашборд)" as Dashboard
+state "Список площадок" as AreaList
+state "Просмотр брони" as BookingDetail
+state "Создание / редактирование\nброни" as BookingForm
+
+Login --> Dashboard : успешный вход
+
+Dashboard --> AreaList : раздел «Площадки»
+Dashboard --> BookingForm : «+ Создать бронь»
+
+AreaList --> BookingDetail : выбор брони из списка
+AreaList --> BookingForm : «Забронировать»
+AreaList --> Dashboard : раздел «Главная»
+
+BookingDetail --> AreaList : «← Назад к списку»
+BookingDetail --> BookingForm : «Редактировать»
+
+BookingForm --> AreaList : «Сохранить» /\n«Отмена»
+
+Dashboard --> Login : «Выход»
+AreaList --> Login : «Выход»
+BookingDetail --> Login : «Выход»
+
+@enduml
