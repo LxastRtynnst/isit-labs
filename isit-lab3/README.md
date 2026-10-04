@@ -68,17 +68,19 @@
 **Отражение в архитектуре:** компонент показан на диаграмме архитектуры и участвует в диаграмме взаимодействия.
 
 ## 5. Структура проекта
+```
 project/
 ├── frontend/
 ├── backend/
-│ ├── controllers/
-│ ├── services/
-│ ├── repositories/
-│ ├── models/
-│ └── routes/
+│   ├── controllers/
+│   ├── services/
+│   ├── repositories/
+│   ├── models/
+│   └── routes/
 ├── database/
 ├── docs/
 └── README.md
+```
 **Пояснение:**
 - `frontend/` — клиентская часть (веб-интерфейс).
 - `backend/` — серверная часть, разделённая по типу компонентов:
