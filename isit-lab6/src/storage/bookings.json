@@ -1,0 +1,7 @@
+[
+  { "id": 1, "area_id": 1, "title": "Утренняя игра", "status": "confirmed", "priority": "high", "due_date": "2026-10-15" },
+  { "id": 2, "area_id": 2, "title": "Тренировка с тренером", "status": "new", "priority": "medium", "due_date": "2026-10-16" },
+  { "id": 3, "area_id": 1, "title": "Матч выходного дня", "status": "new", "priority": "low", "due_date": "2026-10-18" },
+  { "id": 4, "area_id": 3, "title": "Игра 3x3", "status": "confirmed", "priority": "high", "due_date": "2026-10-14" },
+  { "id": 5, "area_id": 1, "title": "Корпоративный турнир", "status": "new", "priority": "high", "due_date": "2026-10-20" }
+]
