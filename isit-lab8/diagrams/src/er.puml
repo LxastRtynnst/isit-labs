@@ -1,0 +1,62 @@
+@startuml
+!theme plain
+hide circle
+
+entity "users" as users {
+    * id : SERIAL <<PK>>
+    --
+    * name : VARCHAR(100)
+    * email : VARCHAR(255) <<UNIQUE>>
+    * role : VARCHAR(20) <<CHECK>>
+    * created_at : TIMESTAMP
+}
+
+entity "user_profiles" as user_profiles {
+    * user_id : INTEGER <<PK, FK>>
+    --
+    phone : VARCHAR(20)
+    telegram : VARCHAR(50) <<UNIQUE>>
+    position : VARCHAR(100)
+}
+
+entity "areas" as areas {
+    * id : SERIAL <<PK>>
+    --
+    * name : VARCHAR(150) <<UNIQUE>>
+    description : TEXT
+    * area_type : VARCHAR(50) <<CHECK>>
+    * created_at : TIMESTAMP
+}
+
+entity "bookings" as bookings {
+    * id : SERIAL <<PK>>
+    --
+    * area_id : INTEGER <<FK>>
+    * user_id : INTEGER <<FK>>
+    * title : VARCHAR(200) <<CHECK>>
+    * status : VARCHAR(20) <<CHECK>>
+    * priority : VARCHAR(10) <<CHECK>>
+    due_date : DATE
+    * created_at : TIMESTAMP
+}
+
+entity "equipment" as equipment {
+    * id : SERIAL <<PK>>
+    --
+    * name : VARCHAR(100) <<UNIQUE>>
+    description : TEXT
+}
+
+entity "booking_equipment" as booking_equipment {
+    * booking_id : INTEGER <<PK, FK>>
+    * equipment_id : INTEGER <<PK, FK>>
+    --
+    * quantity : INTEGER <<CHECK>>
+}
+
+users ||--o| user_profiles : "1 : 1 профиль"
+users ||--o{ bookings : "1 : N брони"
+areas ||--o{ bookings : "1 : N брони"
+bookings ||--o{ booking_equipment : "1 : N"
+equipment ||--o{ booking_equipment : "1 : N"
+@enduml
